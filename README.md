@@ -25,8 +25,8 @@ Estructura del proyecto
 - Archivo de salida con resumen del proceso.
 - Archivo LOG.TXT con el historial de ejecución.
 
-  Conceptos aplicados.
-  - Flujo tipo batch y procesamiento de registros.
-  - Manejo de archivos y FILE STATUS
-  - Manejo de lectura
-  - Validaciones y lógica orientada al negocio
+Conceptos aplicados.
+- Flujo tipo batch y procesamiento de registros.
+- Manejo de archivos y FILE STATUS.
+- Manejo de lectura.
+- Validaciones y lógica orientada al negocio.
