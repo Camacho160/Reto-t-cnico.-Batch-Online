@@ -12,7 +12,7 @@
        FILE-CONTROL.
       *----Select para archivo Indexado
            SELECT CUENTAS
-               ASSIGN TO "C:\Users\USUARIO\Pr_Banco_Bogota\CUENTAS"
+               ASSIGN TO "C:\Users\USUARIO\Pr_Tecnica\CUENTAS"
                ORGANIZATION IS INDEXED
                ACCESS MODE  IS DYNAMIC
                RECORD KEY   IS LV0-CTA
@@ -57,6 +57,7 @@
        IF  ST-CTA = "35"
            OPEN OUTPUT CUENTAS
            CLOSE CUENTAS
+           OPEN I-O CUENTAS
        END-IF.
        END DECLARATIVES.
 

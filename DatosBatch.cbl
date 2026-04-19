@@ -14,13 +14,13 @@
 
       *----Select para archivo secuencial.
            SELECT DATOS-TXT
-               ASSIGN TO "C:\Users\USUARIO\Pr_Banco_Bogota\DATOS.TXT"
+               ASSIGN TO "C:\Users\USUARIO\Pr_Tecnica\DATOS.TXT"
                ORGANIZATION IS LINE SEQUENTIAL
                FILE STATUS IS ST-TXT.
 
       *----Select para archivo Indexado
            SELECT CUENTAS
-               ASSIGN TO "C:\Users\USUARIO\Pr_Banco_Bogota\CUENTAS"
+               ASSIGN TO "C:\Users\USUARIO\Pr_Tecnica\CUENTAS"
                ORGANIZATION IS INDEXED
                ACCESS MODE  IS DYNAMIC
                RECORD KEY   IS LV0-CTA
@@ -28,12 +28,12 @@
 
       *----Select para archivo de salida
            SELECT ARCHIVO-SALE
-               ASSIGN TO "C:\Users\USUARIO\Pr_Banco_Bogota\SALE.TXT"
+               ASSIGN TO "C:\Users\USUARIO\Pr_Tecnica\SALE.TXT"
                ORGANIZATION IS LINE SEQUENTIAL.
 
       *----Select para archivo Log
            SELECT ARCHIVO-LOG
-               ASSIGN TO "C:\Users\USUARIO\Pr_Banco_Bogota\LOG.TXT"
+               ASSIGN TO "C:\Users\USUARIO\Pr_Tecnica\LOG.TXT"
                ORGANIZATION IS LINE SEQUENTIAL
                ACCESS MODE  IS SEQUENTIAL
                FILE STATUS  IS ST-LOG.
@@ -137,6 +137,7 @@
 
        MAIN-PROCEDURE.
        0000-INICIA-PROGRAMA.
+           DISPLAY "INICIA PROCESO BATCH..."
            PERFORM 0005-ABRIR-ARCHIVOS
            MOVE "Inicia proceso en el programa DatosBatch" TO WK-MSN-LOG
            PERFORM 090-ESCRIBIR-LOG
