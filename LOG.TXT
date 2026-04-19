@@ -53,3 +53,5 @@
 2026/04/19 14:25:30:08 Finaliza proceso en el programa DatosBatch
 2026/04/19 14:55:59:80 Inicia proceso en el programa DatosBatch
 2026/04/19 14:55:59:80 Finaliza proceso en el programa DatosBatch
+2026/04/19 14:57:20:08 Inicia proceso en el programa DatosBatch
+2026/04/19 14:57:20:08 Finaliza proceso en el programa DatosBatch
