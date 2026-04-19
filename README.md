@@ -1,4 +1,4 @@
-Reto técnico.
+#Reto técnico.
 Se presenta la solución de la prueba técnica desarrollada en COBOL simulando un proceso Batch y online
 
 Programa: DatosBatch.cbl. 
