@@ -44,7 +44,7 @@
            02 WK-SALDO     PIC $ZZZ,ZZZ,ZZZ,ZZZ.99.
            02 WK-VLR-TEM   PIC 9(12).
            02 WK-NRO-CTA   PIC X(06).
-           02 WK-SEGUNDOS  PIC 9(4) VALUE 3.
+           02 WK-SEGUNDOS  PIC 9 VALUE 2.
            02 WK-VLR-SALDO PIC S9(12).
 
        PROCEDURE DIVISION.
@@ -123,7 +123,7 @@
 
            READ CUENTAS WITH NO LOCK KEY IS LV0-CTA INVALID KEY
                DISPLAY "<<<<<<<<<<<<<<<<<<ERROR>>>>>>>>>>>>>>>>>>>>>>>>"
-               DISPLAY "La cuentas " LV0-CTA " no existe"
+               DISPLAY "La cuenta " LV0-CTA " no existe"
            NOT INVALID KEY
                INITIALIZE WK-VLR WK-SALDO
                IF WK-OPC = 1
@@ -149,11 +149,17 @@
                INITIALIZE WK-VLR-SALDO
                COMPUTE WK-VLR-SALDO = VLR-SALDO - WK-VLR-TEM
                MOVE WK-VLR-SALDO   TO VLR-SALDO
-               REWRITE REG-CUENTAS END-REWRITE
-               DISPLAY "==============================================="
-               DISPLAY "**********PROCESO REALIZADO CON EXITO**********"
-               CALL "C$SLEEP" USING WK-SEGUNDOS
-               MOVE VLR-SALDO    TO WK-VLR
-               DISPLAY "SU NUEVO SALDO ES: " WK-VLR
+               REWRITE REG-CUENTAS INVALID KEY
+                   DISPLAY "==========================================="
+                   DISPLAY "****OCURRIO UN ERROR. VUELVA A INTENTAR****"
+                   DISPLAY "==========================================="
+               NOT INVALID KEY
+                   DISPLAY "==========================================="
+                   DISPLAY "********PROCESO REALIZADO CON EXITO********"
+                   DISPLAY "==========================================="
+                   CALL "C$SLEEP" USING WK-SEGUNDOS
+                   MOVE VLR-SALDO    TO WK-VLR
+                   DISPLAY "SU NUEVO SALDO ES: " WK-VLR
+               END-REWRITE
            END-IF.
        END PROGRAM ConsultarCuenta.
