@@ -1,7 +1,7 @@
 # Reto técnico.
 Se presenta la solución de la prueba técnica desarrollada en COBOL simulando un proceso Batch y online
 
-# Programa: DatosBatch.cbl. 
+## Programa: DatosBatch.cbl. 
 Procesa un archivo secuencial de manera diaria, con registros de transacciones (D: deposito y W: retiros) para grabar 
 o actualizar los datos de la entidad.
 
