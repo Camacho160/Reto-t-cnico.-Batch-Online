@@ -1,0 +1,17 @@
+2026/04/19 11:41:41:20 Inicia proceso en el programa DatosBatch
+2026/04/19 11:41:41:20 Finaliza proceso en el programa DatosBatch
+2026/04/19 11:44:17:21 Inicia proceso en el programa DatosBatch
+2026/04/19 11:44:17:21 No se realiza proceso Batch por error 35 en .TXT
+2026/04/19 11:44:17:21 Finaliza proceso en el programa DatosBatch
+2026/04/19 11:45:13:25 Inicia proceso en el programa DatosBatch
+2026/04/19 11:45:13:25 No se realiza proceso Batch por error 35 en .TXT
+2026/04/19 11:45:13:25 Finaliza proceso en el programa DatosBatch
+2026/04/19 12:48:53:65 Inicia proceso en el programa DatosBatch
+2026/04/19 12:48:53:65 No se realiza proceso Batch por error 35 en .TXT
+2026/04/19 12:48:53:65 Finaliza proceso en el programa DatosBatch
+2026/04/19 12:48:54:95 Inicia proceso en el programa DatosBatch
+2026/04/19 12:48:54:95 No se realiza proceso Batch por error 35 en .TXT
+2026/04/19 12:48:54:95 Finaliza proceso en el programa DatosBatch
+2026/04/19 13:02:47:85 Inicia proceso en el programa DatosBatch
+2026/04/19 13:02:47:86 No se realiza proceso Batch por error 35 en .TXT
+2026/04/19 13:02:47:86 Finaliza proceso en el programa DatosBatch
